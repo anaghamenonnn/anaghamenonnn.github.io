@@ -3,6 +3,36 @@
     <head>
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <link rel="stylesheet" href="style.css"> 
+        :root{
+            --card_width: 250px;
+            --card_border_radius: 16px;
+            --row_increment: 10px;
+            --card_small: 26;
+            --card_medium: 33;
+            --card_large: 45;
+
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .pin_container{
+            margin:0;
+            padding:0;
+            width: 80vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX (-50%);
+
+            display: grid;
+            grid-template-coloums: repeat (auto-fill,)
+
+
+        }
+        
     </head>
     <body>
         <div class="container">
@@ -22,7 +52,9 @@
         </script>
 
     <a href="waysofseeing.html"><img src="john.jpeg" alt="johnie" style="width:300px;height:500px;"></a>
+
     </body>
+        <div class="pin_container"></div>
     
 </html>
 
