@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "1942.ttf", monospace;
 }
 
 .container1{
@@ -13,6 +13,12 @@
     display: flex;
     justify-content:center;
 }
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("1942.ttf") format("ttf"), url("/1942.woff")
+        format("ttf");
+  }
 
 body {
     background-color: white;
