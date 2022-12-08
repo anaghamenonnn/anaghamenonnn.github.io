@@ -1,0 +1,269 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #5e6d5a;
+  }
+  
+  .christmas-decorations {
+    position: relative;
+  }
+  
+  .christmas-decorations:before {
+    content:"";
+    position: absolute;
+    border-radius:50%;
+    background-color: rgba(0,0,0,0.5);
+    width:200px;
+    height:20px;
+    top:180px;
+    left:-80px;
+  }
+  
+  .tree {
+    position: relative;
+    background-color: #57462a;
+    width: 35px;
+    height: 70px;
+    top:120px;
+  }
+  
+  .tree-bottom, .tree-middle {
+    position: absolute;
+    height:0;
+    width:100px;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 100px solid #64a85b;
+  }
+  
+  .tree-bottom {
+    top:-70px;
+    left:-83px;
+  }
+  
+  .tree-middle {
+    top:-130px;
+    left:-83px;
+  }
+  
+  .tree-top {
+    position: absolute;
+    height:0;
+    width:0;
+    border-right: 70px solid transparent;
+    border-left: 70px solid transparent;
+    border-bottom: 120px solid #64a85b;
+    top:-240px;
+    left:-53px;
+    z-index:1;
+  }
+  
+  .tree-top:before {
+    content:"";
+    position: absolute;
+    border-top: 10px solid rgba(0,0,0,0.5);
+    border-right: 5px solid transparent;
+    border-left: 105px solid transparent;
+    top:120px;
+    left:-50px;
+    transform: skew(45deg);
+  }
+  
+  .tree-top:after {
+    content:"";
+    position: absolute;
+    border-top: 10px solid rgba(0,0,0,0.5);
+    border-right: 5px solid transparent;
+    border-left: 135px solid transparent;
+    top:210px;
+    left:-65px;
+    transform: skew(45deg);
+  }
+  
+  .decorations {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    left:-500px;
+    top:-100px;
+    box-shadow: 7px 7px rgba(0,0,0,0.5);
+    z-index:3;
+  }
+  
+  .text {
+    text-align: center;
+    font-weight: bold;
+    font-family: tahoma;
+    text-decoration: underline;
+  }
+  
+  #ball1 {
+    position: absolute;
+    border-radius:50%;
+    width:20px;
+    height: 20px;
+    background-color: #b65964;
+    left:20px;
+    cursor: pointer;
+  }
+  
+  .tree-active {
+    filter: brightness(110%);
+  }
+  
+  #tree-star {
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 27px solid transparent;
+    border-bottom: 20px solid #cec42f;
+    border-left: 27px solid transparent;
+    transform: rotate(-35deg);
+    top:60px;
+    left:50px;
+    cursor: pointer;
+      }
+  
+  #tree-star:before {
+        border-bottom: 20px solid #cec42f;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -12.5px;
+        left: -17.5px;
+        display: block;
+        content: '';
+        transform: rotate(-35deg);
+      }
+  
+  #tree-star:after {
+        position: absolute;
+        display: block;
+        top: 0.75px;
+        left: -26.25px;
+        width: 0px;
+        height: 0px;
+        border-right: 27px solid transparent;
+        border-bottom: 20px solid #cec42f;
+        border-left: 27px solid transparent;
+        transform: rotate(-70deg);
+        content:'';
+  }
+  
+  #ball2 {
+    position: absolute;
+    border-radius:50%;
+    width:22px;
+    height: 22px;
+    background-color: #7d45e6;
+    left:120px;
+    top:90px;
+    cursor: pointer;
+  }
+  
+  #ball3 {
+    position: absolute;
+    border-radius:50%;
+    width:25px;
+    height: 25px;
+    background-color: #39bfd8;
+    left:40px;
+    top:120px;
+    cursor: pointer;
+  }
+  
+  #ball4 {
+    position: absolute;
+    border-radius:50%;
+    width:23px;
+    height: 23px;
+    background-color: #cec431;
+    left:80px;
+    top:150px;
+    cursor: pointer;
+  }
+  
+  #ball5 {
+    position: absolute;
+    border-radius:50%;
+    width:18px;
+    height: 18px;
+    background-color: #cec431;
+    left:180px;
+    top:150px;
+    cursor: pointer;
+  }
+  
+  #ball6 {
+    position: absolute;
+    border-radius:50%;
+    width:25px;
+    height: 25px;
+    background-color: #b85863;
+    left:180px;
+    top:100px;
+    cursor: pointer;
+  }
+  
+  #bow {
+    position: absolute;
+    width: 1px;
+    height: 0;
+    border-bottom: 8px solid #7d45e6;
+    border-top: 8px solid #7d45e6;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    transform: rotate(-90deg);
+    left:170px;
+    cursor: pointer;
+  }
+  
+  #bow2 {
+    position: absolute;
+    width: 1px;
+    height: 0;
+    border-bottom: 7px solid #39bfd8;
+    border-top: 7px solid #39bfd8;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    transform: rotate(-90deg);
+    left:140px;
+    top:160px;
+    cursor: pointer;
+  }
+  
+  #bow3 {
+    position: absolute;
+    width: 1px;
+    height: 0;
+    border-bottom: 7px solid #b85863;
+    border-top: 7px solid #b85863;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    transform: rotate(-90deg);
+    left:100px;
+    top:130px;
+    cursor: pointer;
+  }
+  
+  #game-complete {
+    display: none;
+    position: absolute;
+    font-size:60px;
+    font-weight: bold;
+    font-family: tahoma;
+    color: #ae2012;
+    text-shadow: 2px 2px #001219;
+    top:-110px;
+    left:-165px;
+    z-index:4;
+    text-align: center;
+  }
+
+

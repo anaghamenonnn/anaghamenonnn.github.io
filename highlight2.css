@@ -1,0 +1,117 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: monospace;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	background-image: url('bereal.jpg');
+	/* overflow-x: hidden; */
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+header {
+	color: white;
+	position: fixed;
+	top: 2vh;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: large;
+	z-index: 10000;
+}
+
+header .title {
+	font-weight: 400;
+    
+}
+
+header .title:hover {
+	background: white;
+	/* color: rgb(0, 20, 111); */
+	transition: 0.3s;
+}
+
+header ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li {
+	list-style: none;
+	margin-left: 20px;
+}
+
+header ul li a {
+	text-decoration: none;
+	padding: 2px 5px;
+	color: white;
+}
+
+header ul li a:hover, header ul li a.active {
+    background: white;
+	color: rgb(0, 0, 0);
+	transition: 0.3s;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background:linear-gradient(to top, rgb(0, 0, 0),transparent);
+	z-index: 1000;
+}
+
+section img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+section img#mouse {
+	mix-blend-mode: screen;
+	margin-top: 50vh;
+}
+
+.icon {
+	width: 200px; 
+	height: 200px;
+}
+
+.icon:hover {
+	background-color: #ffffff63;
+}
+
+.infoBox {
+	width: 1125px; 
+	height: 633px;
+}
+
+.infoBox:hover {
+	background-color: #ffffff63;
+}
