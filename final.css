@@ -104,7 +104,7 @@ section img#mouse {
 }
 
 .icon:hover {
-	background-color: #ffffff63;
+	background-color: transparent; 
 }
 
 .infoBox {
@@ -113,7 +113,7 @@ section img#mouse {
 }
 
 .infoBox:hover {
-	background-color: #ffffff63;
+	background-color: transparent;
 }
 
 
