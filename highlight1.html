@@ -1,25 +1,45 @@
-<html>
-  <head>
-    <title>Add Map</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
-    <link rel="stylesheet" type="text/css" href="hightlight1.css" />
-    <script type="module" src="hihglight1.js"></script>
-  </head>
-  <body>
-    <h3>My Google Maps Demo</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-
-    <!-- 
-     The `defer` attribute causes the callback to execute after the full HTML
-     document has been parsed. For non-blocking uses, avoiding race conditions,
-     and consistent behavior across browsers, consider loading using Promises
-     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-    -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script>
-  </body>
-</html>
+<!-- https://www.w3schools.com/howto/howto_js_todolist.asp -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="hightlight1.css" rel="stylesheet" type="text/css">
+  <title>highlight 1t</title>
+</head>
+    <body>
+      <header>
+        <a href="roundup-landing.html" class="title">twenty twenty-two</a>
+        <ul>
+            <li><a href="highlights.html">looking back</a></li>
+            <li><a href="resolutions.html">moving forward</a></li>
+        </ul>
+    </header>
+    <main>
+      
+      <div class="container">
+        <p>
+          <label for="new-task">add goals</label><input id="new-task" type="text"><button>add</button>
+        </p>
+        
+        <h3>to-do</h3>
+        <ul id="incomplete-tasks">
+          <li><input type="checkbox"><label>slay</label><input type="text"><button class="edit">editt</button><button class="delete">delete</button></li>
+          <li class="editMode"><input type="checkbox"><label>don't cry</label><input type="text" value="Go Shopping"><button class="edit">edit</button><button class="delete">delete</button></li>
+          
+        </ul>
+        
+        <h3>completed</h3>
+        <ul id="completed-tasks">
+          <li><input type="checkbox" checked><label>eat!</label><input type="text"><button class="edit">edit</button><button class="delete">delete</button></li>
+        </ul>
+      </div>
+    
+    </main>
+    
+  
+      <script type="text/javascript" src="hightlight1.js"></script>
+  
+    </body>
+  </html>
