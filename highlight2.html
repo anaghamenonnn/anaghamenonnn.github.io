@@ -11,35 +11,80 @@
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 </head>
 
-<body>
-    <header>
-        <a href="roundup-landing.html" class="title">i'm anagha menon</a>
-        <ul>
-            <li><a href="highlights.html">looking back</a></li>
-            <li><a href="resolutions.html">moving forward</a></li>
-        </ul>
-    </header>
+<body> 
 
-    
-    <p>
-        
-        <a>
-            <img class="icon" src="b1.JPG"style="margin-top: 20vh; margin-left: 20vw;">
-            <img class="icon" src="start.png"style="margin-top: 20vh; margin-left: 30vw; ">
-            <img class="icon" src="start.png"style="margin-top: 16vh; margin-left: 19vw;" >
-            <img class="icon" src="start.png"style="margin-top: 15vh; margin-left: 23vw; ">
+    <a>
+        <img class="song-icon" src="waka.png" style="margin-top: 20vh; margin-left: 5vw;"
+            onmouseover="PlaySound('sound1')" onmouseout="StopSound('sound1')">
+        <audio id="sound1" preload="auto" src="waka.mp3"></audio>
+    </a>
 
-        </a>
-            
-       
+    <a>
+        <img class="song-icon" src="neyo.png" style="margin-top: 20vh; margin-left: 10vw;"
+            onmouseover="PlaySound('sound2')" onmouseout="StopSound('sound2')">
+        <audio id="sound2" preload="auto" src="neyo.mp3"></audio>
+    </a>
+
+    <a>
+        <img class="song-icon" src="rsz_omar.png" style="margin-top: 20vh; margin-left: 15vw;"
+            onmouseover="PlaySound('sound3')" onmouseout="StopSound('sound3')">
+        <audio id="sound3" preload="auto" src="petrified.mp3"></audio>
+    </a>
+
+    <a>
+        <img class="song-icon" src="rsz_daniel.jpg" style="margin-top: 25vh; margin-left: 5vw; size: 10px;;"
+            onmouseover="PlaySound('sound4')" onmouseout="StopSound('sound4')">
+        <audio id="sound4" preload="auto" src="Blessed.mp3"></audio>
     </p>
+
+    <a>
+        <img class="song-icon" src="baudelaire.png" style="margin-top: 30vh; margin-left: 10vw;size: 10px;"
+            onmouseover="PlaySound('sound5')" onmouseout="StopSound('sound5')">
+        <audio id="sound5" preload="auto" src="baudelaire.mp3"></audio>
+    </a>
+
+    <a>
+        <img class="song-icon" src="ritual.png" style="margin-top: 30vh; margin-left: 50vw;"
+            onmouseover="PlaySound('sound6')" onmouseout="StopSound('sound6')">
+        <audio id="sound6" preload="auto" src="ritual.mp3"></audio>
+    </a>
+
+    <a>
+        <img class="song-icon" src="nobles.png" style="margin-top: 20vh; margin-left: 25vw;"
+            onmouseover="PlaySound('sound7')" onmouseout="StopSound('sound7')">
+        <audio id="sound7" preload="auto" src="nobles.mp3"></audio>
+    </a>
+
+    <a>
+        <img class="song-icon" src="meetagain.png" style="margin-top: 40vh; margin-left: 40vw;"
+            onmouseover="PlaySound('sound8')" onmouseout="StopSound('sound8')">
+        <audio id="sound8" preload="auto" src="meetagain.mp3"></audio>
+    </a>
+
+    <a>
+        <img class="song-icon" src="breakitoff.png" style="margin-top: 30vh; margin-left: 50vw;"
+            onmouseover="PlaySound('sound9')" onmouseout="StopSound('sound9')">
+        <audio id="sound9" preload="auto" src="breakitoff.mp3"></audio>
+    </a>
 
     <script>
         $(function () {
-            $(".icon").draggable();
+            $(".song-icon").draggable();
         });
+
+        function PlaySound(soundobj) {
+            var thissound = document.getElementById(soundobj);
+            thissound.play();
+        }
+        function StopSound(soundobj) {
+            var thissound = document.getElementById(soundobj);
+            thissound.pause();
+            thissound.currentTime = currentTime;
+        }
     </script>
+
 </body>
+
 
 
 </html>

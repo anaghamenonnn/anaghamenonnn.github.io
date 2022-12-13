@@ -1,18 +1,10 @@
 *
 {
-	margin: 20;
-	padding: 20;
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 	font-family: monospace;
-	scroll-behavior:smooth;
-}
-
-body {
-	/* min-height: 100vh; */
-	background-image: url('ngmusic.jpg');
-	/* overflow-x: hidden; */
-    background-attachment:local;
-    background-size: cover;
+	scroll-behavior: smooth;
 }
 
 header {
@@ -63,39 +55,31 @@ header ul li a:hover, header ul li a.active {
 	transition: 0.3s;
 }
 
-section {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	padding: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-section::before {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 100px;
-	background:linear-gradient(to top, rgb(0, 0, 0),transparent);
-	z-index: 1000;
-}
-
-section img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	pointer-events: none;
-}
-
-
-#videoElement{
-	width: 500px;
-	height: 375px;
+body {
 	background-color: black;
-  }
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.rotate{
+	animation: rotation 6s;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+.linear{
+	animation-timing-function: linear;
+}
+
+.infinite{
+	animation-iteration-count: infinite;
+}
