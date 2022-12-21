@@ -1,0 +1,205 @@
+<html>
+    <head> 
+        <link rel="stylesheet" href="documentation.css">
+		<title>documentation</title>
+    </head>
+    <body>
+        <main>
+
+            <h2><i>  
+                Final Project Documentation
+
+            </i> </h2>
+
+            <div class="row">
+                <div class="column">
+                    <p> 
+                        For this project I decided to make a twenty twenty-two rewind type of thing
+                        titled, looking back and moving forward.
+                    </p>
+                </div> 
+                
+
+                <div class="column">
+                    <p> 
+                        I then took some of my code from a previous assignment, medium is the massage,
+                        and decided to work from there as it had some of the aspects I needed.
+                    </p>
+                </div> 
+
+                <div class="column">
+                    <img src="docpics/ogcode.png" width="600px">
+                </div>
+                <div class="column">
+                    <p> 
+                        The idea of looping through my assets deemed impossible, so I decided to just manually put the assets
+                        into the array in my javascript file. Two lines of code for each image, an image object is created and then given a source.
+                    </p>
+                </div> 
+                <div class="column">
+                    <img src="docpics/manually.png" width="600px">
+                </div>
+
+                <div class="column">
+                    <p> 
+                        After adding the new assets to my old code, there were some problems with the button.
+                        Below are my first attempts. As you can see, only one image shows up and how many times it
+                        shows up varies.
+                    </p>
+                </div> 
+                <div class="column">
+                    <img src="docpics/firstatt.png" width="600px">
+                </div>
+                <div class="column">
+                    <img src="docpics/secatt.png" width="600px">
+                </div>
+                <div class="column">
+                    <img src="docpics/thirdatt.png" width="600px">
+                </div>
+
+                <div class="column">
+                    <p> 
+                        In  order to fix this, I ensured that my random variable was being calculated correctly 
+                        and added a copy of the array within my function that occurs when the button is pressed that 
+                        is subtracted from each time an image is picked so there would be no repeats. This worked, and I 
+                        had my first success: random images popping up when the button is pressed.
+                    </p>
+                </div> 
+                
+                <div class="column">
+                    <img src="docpics/yay!!!.png" width="600px">
+                </div>
+
+                <div class="column">
+                    <p> 
+                        My next step was creating the drag and drop feature. First I ensured that my elements
+                        were set to draggable = true.
+                    </p>
+                </div> 
+
+                <div class="column">
+                    <img src="docpics/draggable.png" width="600px">
+                </div>
+
+                <div class="column">
+                    <p> 
+                        I then added some javascript functions for dragging and dropping. Only one image would drag and drop at this point.
+                        I brought this version in for user testing and it was evident more directions was needed and I 
+                        found that it would be good if the user could pick the location of the thing they 
+                        were dragging.
+                    </p>
+                </div> 
+
+                <div class="column">
+                    <img src="docpics/test1.JPG" width="600px">
+                </div>
+
+                <div class="column">
+                    <img src="docpics/test2.JPG" width="600px">
+                </div>
+
+                <div class="column">
+                    <img src="docpics/kiki2.JPG" width="600px">
+                </div>
+
+                <div class="column">
+                    <img src="docpics/giantest.JPG" width="600px">
+                </div>
+                
+                <div class="column">
+                    <p> 
+                        After user testing, I focused on making sure all the elements could be dragged and dropped.
+                        This turned out to be a lot of work. I ended up just trying out a bunch of different things
+                        and using console logs to see when they were working. As you can see in the image below,
+                        I got it to drag multiple items but only the text title of the object was showing up at first.
+                        After playing around with it a bit more, I was successful!
+                    </p>
+                </div> 
+
+                <div class="column">
+                    <img src="docpics/console2.png" width="600px">
+                </div>
+
+
+                <div class="column">
+                    <img src="docpics/console.png" width="600px">
+                </div>
+                <div class="column">
+                    <p> 
+                        The next step was attempting to make it possible to choose the location of the images
+                        being dragged. To do so, I found the x and y location of the mouse in my function where the 
+                        image is being dropped and added this location to where the image should go before appending it.
+                    </p>
+                </div> 
+                <div class="column">
+                    <img src="docpics/loc.png" width="600px">
+                </div>
+                <div class="column">
+                    <p> 
+                        This ended up half-working and the elements move to around where your mouse is, but not to the exact location.
+                        This is the functionality that my website has at the moment, but I am continuing to work on it. See the images below
+                        for what the website looked like at this point.
+                    </p>
+                </div> 
+                <div class="column">
+                    <img src="docpics/working.png" width="600px">
+                </div>
+                <div class="column">
+                    <img src="docpics/working2.png" width="600px">
+                </div>
+                <div class="column">
+                    <img src="docpics/working3.png" width="600px">
+                </div>
+                <div class="column">
+                    <img src="docpics/working4.png" width="600px">
+                </div>
+                <div class="column">
+                    <img src="docpics/working5.png" width="600px">
+                </div>
+                <div class="column">
+                    <img src="docpics/working6.png" width="600px">
+                </div>
+                <div class="column">
+                    <p> 
+                        Finally, I wanted to try and make a save button so that the user can have their art.
+                        I found a tutorial online, linked in the jav file of my final, and created these lines of code.
+                    </p>
+                </div> 
+                <div class="column">
+                    <img src="docpics/savecode.png" width="600px">
+                </div>
+
+                <div class="column">
+                    <p> 
+                        At first, this worked! I could save when I pressed the save button! But it only worked once and
+                        I cannot get it to work again. I am continuing to work on this aspect as well.
+                    </p>
+                </div> 
+
+                <div class="column">
+                    <img src="docpics/saves.png" width="600px">
+                </div>
+
+                <div class="column">
+                    <p> 
+                        So, here is my website at this point in time!
+                    </p>
+                </div> 
+
+                <div class="column">
+                    <img src="docpics/fin1.png" width="600px">
+                </div>
+                <div class="column">
+                    <img src="docpics/fin2.png" width="600px">
+                </div>
+                <div class="column">
+                    <img src="docpics/fin3.png" width="600px">
+                </div>
+            </div>
+
+
+
+
+        </main>
+    </body>
+</html>
