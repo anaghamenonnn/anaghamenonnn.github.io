@@ -7,5 +7,14 @@ body{
     text-align: center;
 }
 
+.icon {
+	width: 200px; 
+	height: 200px;
+}
+
+.icon:hover {
+	background-color: transparent; 
+}
+
   
 
